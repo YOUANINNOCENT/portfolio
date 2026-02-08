@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page web personnelle - Youan Innocent</title>
+    <link rel="stylesheet" href="vint.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Ma page web personnelle</h1>
+    <p class="subtitle">Youan Innocent</p>
+</header>
+
+<div class="container">
+
+    <!-- Section À propos de moi -->
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <img src="youan.jpg" alt="ma photo" class="photo">
+        <p><strong>Nom :</strong> Youan Innocent</p>
+        <p>
+            Je suis passionné par l’informatique.
+            Mon parcours m’a permis d’apprendre les bases du développement
+            et d’utiliser le code pour résoudre des problèmes concrets.
+        </p>
+        <p>
+            <strong>Centres d’intérêt :</strong> Programmation, développement web,
+            automatisation, technologies numériques.
+        </p>
+    </section>
+
+    <!-- Section Ma passion -->
+    <section id="passion">
+        <h2>Ma passion</h2>
+        <p>
+            Ma passion est l’informatique, car elle me permet de créer des solutions
+            utiles grâce au code. J’ai conçu un gestionnaire de stock pour une
+            boutique de cosmétique en utilisant VBA et des macros.
+        </p>
+        <p>
+            J’ai également mis en place un serveur local pour l’hébergement
+            des données accessibles à distance.
+        </p>
+    </section>
+
+    <!-- Section Interaction JavaScript -->
+    <section id="interaction">
+        <h2>Interaction</h2>
+        <p>Clique sur le bouton pour afficher un message :</p>
+        <button onclick="afficherMessage()">Afficher le message</button>
+        <p id="message"></p>
+    </section>
+
+</div>
+
+<!-- JavaScript : Interaction simple -->
+<script>
+    function afficherMessage() {
+        document.getElementById("message").innerText =
+            "Merci d’avoir visité ma page web personnelle 😊";
+    }
+</script>
+
+</body>
+</html>
